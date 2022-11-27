@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #0e0c17;
+  text-align: center;
+  color: white;
+}
+:root {
+    --primary-color: #4a2cf4;
+  }
+
+.nav {
+  display: flex;
+
+  justify-content: space-between;
+  font-family: Montserrat, sans-serif;
+  background-color: black;
+  padding: 20px 30px;
+  margin-bottom: 1em;
+  border-bottom: blue solid 1px;
+}
+
+.nav-logo {
+  font-weight: bold;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin-left:2rem;
+  margin-right: 2rem;
+}
+@media screen and (max-width:700px) {
+    .nav-list li {
+       
+        margin-left:.5rem;
+        margin-right: .5rem;
+      }
+      .nav-logo{
+        display: none;
+      }
+}
+
+.nav-list a {
+  color: var(--nav-link);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: blue;
+}
+
+.quiz-main {
+    margin: 2rem auto;
+    width: 90%;
+    text-align: center;
+  }
+  
+  .question-container {
+    width: 85%;
+    margin: 1rem auto;
+    font-size: larger;
+    padding: 1rem 0;
+  }
+  
+  .question-container p {
+    margin: 1rem 0;
+  }
+  #submit-answers-btn{
+    padding: 10px 25px;
+    background-color: rgb(49, 49, 236);
+    border-radius: 10px;
+  }
+  .input-label {
+    font-size: larger;
+    color: var(--primary-color);
+    width: 256px;
+  }
+  
+  .input-label p {
+    font-size: larger;
+    margin: 0.5rem;
+  }
+  
+  .input-text {
+    font-size: 14px;
+    outline: #fff;
+    padding: 0.6rem 1rem;
+    margin: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 258px;
+  }
+  .btn-check {
+    background: var(--primary-color);
+    border: none;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    font-size: large;
+    cursor: pointer;
+    outline: #fff;
+    margin: 1rem auto;
+    display: block;
+  }
+  
+  .output {
+    font-size: x-large;
+    margin: 1rem;
+  }
+  
+  footer {
+    margin-top: 1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+    padding: 50px 0;
+    background-color: rgba(139, 109, 204, 0.205);
+}
